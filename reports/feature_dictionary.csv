@@ -1,0 +1,22 @@
+feature,role,semantic_type,raw_dtype,prepared_dtype,distinct_values,raw_nulls,blank_strings,prepared_nulls,categories,notes
+customerID,identifier,identifier,str,str,7043,0,0,0,,Exclude from model inputs.
+gender,predictor,categorical,str,str,2,0,0,0,Female; Male,
+SeniorCitizen,predictor,categorical,int64,int64,2,0,0,0,0; 1,Binary category encoded as 0/1; not a continuous measurement.
+Partner,predictor,categorical,str,str,2,0,0,0,No; Yes,
+Dependents,predictor,categorical,str,str,2,0,0,0,No; Yes,
+tenure,predictor,numeric,int64,int64,73,0,0,0,,Discrete number of months.
+PhoneService,predictor,categorical,str,str,2,0,0,0,No; Yes,
+MultipleLines,predictor,categorical,str,str,3,0,0,0,No; No phone service; Yes,
+InternetService,predictor,categorical,str,str,3,0,0,0,DSL; Fiber optic; No,
+OnlineSecurity,predictor,categorical,str,str,3,0,0,0,No; No internet service; Yes,
+OnlineBackup,predictor,categorical,str,str,3,0,0,0,No; No internet service; Yes,
+DeviceProtection,predictor,categorical,str,str,3,0,0,0,No; No internet service; Yes,
+TechSupport,predictor,categorical,str,str,3,0,0,0,No; No internet service; Yes,
+StreamingTV,predictor,categorical,str,str,3,0,0,0,No; No internet service; Yes,
+StreamingMovies,predictor,categorical,str,str,3,0,0,0,No; No internet service; Yes,
+Contract,predictor,categorical,str,str,3,0,0,0,Month-to-month; One year; Two year,Contract category has duration ordering; encoding is a modeling choice.
+PaperlessBilling,predictor,categorical,str,str,2,0,0,0,No; Yes,
+PaymentMethod,predictor,categorical,str,str,4,0,0,0,Bank transfer (automatic); Credit card (automatic); Electronic check; Mailed check,
+MonthlyCharges,predictor,numeric,float64,float64,1585,0,0,0,,
+TotalCharges,predictor,numeric,str,float64,6531,0,11,11,,"Numeric stored as text; whitespace-only values converted to null, not imputed."
+Churn,target,categorical,str,str,2,0,0,0,No; Yes,
