@@ -1,0 +1,19 @@
+Contract,TenureBand,customers,churned,churn_rate_pct
+Month-to-month,0–12 months,1994,1024,51.354062
+Month-to-month,13–24 months,737,278,37.720488
+Month-to-month,25–36 months,486,158,32.510288
+Month-to-month,37–48 months,316,106,33.544304
+Month-to-month,49–60 months,234,65,27.777778
+Month-to-month,61–72 months,108,24,22.222222
+One year,0–12 months,124,13,10.483871
+One year,13–24 months,197,16,8.121827
+One year,25–36 months,250,20,8.000000
+One year,37–48 months,268,35,13.059701
+One year,49–60 months,321,44,13.707165
+One year,61–72 months,313,38,12.140575
+Two year,0–12 months,68,0,0.000000
+Two year,13–24 months,90,0,0.000000
+Two year,25–36 months,96,2,2.083333
+Two year,37–48 months,178,4,2.247191
+Two year,49–60 months,277,11,3.971119
+Two year,61–72 months,986,31,3.144016

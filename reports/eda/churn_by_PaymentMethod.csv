@@ -1,0 +1,5 @@
+PaymentMethod,customers,churned,retained,churn_rate_pct,customer_share_pct,difference_vs_overall_pp,lift_vs_overall
+Bank transfer (automatic),1544,258,1286,16.709845,21.922476,-9.827143,0.629681
+Credit card (automatic),1522,232,1290,15.243101,21.610109,-11.293886,0.574410
+Electronic check,2365,1071,1294,45.285412,33.579441,18.748425,1.706502
+Mailed check,1612,308,1304,19.106700,22.887974,-7.430287,0.720003

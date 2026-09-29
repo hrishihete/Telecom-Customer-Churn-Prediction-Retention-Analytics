@@ -2,7 +2,19 @@
 
 Completed tasks: dataset acquisition and inspection, followed by missing-charge imputation, categorical conversion, and duplicate removal.
 
-## This week's cleaning deliverables
+## This week's exploratory analysis
+
+Churn rates across contract types, payment methods, and tenure bands are documented in the [EDA findings report](reports/eda/findings.md), with segment counts, rates, four charts, and limitations.
+
+- [Reproducible Python EDA](scripts/analyze_churn.py)
+- [SQL segment queries](sql/churn_eda.sql)
+- [Power BI visual setup](reports/eda/power_bi_eda.md)
+- [Contract summary](reports/eda/churn_by_Contract.csv), [payment summary](reports/eda/churn_by_PaymentMethod.csv), [tenure summary](reports/eda/churn_by_TenureBand.csv)
+- [Contract/tenure joint breakdown](reports/eda/contract_tenure_breakdown.csv)
+
+Run `python scripts/analyze_churn.py` after cleaning. The script verifies all segment counts and rates against independent SQL aggregations.
+
+## Previous week's cleaning deliverables
 
 See the [cleaning report](reports/cleaning_report.md) for decisions and results.
 

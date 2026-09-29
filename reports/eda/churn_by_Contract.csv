@@ -1,0 +1,4 @@
+Contract,customers,churned,retained,churn_rate_pct,customer_share_pct,difference_vs_overall_pp,lift_vs_overall
+Month-to-month,3875,1655,2220,42.709677,55.019168,16.172690,1.609440
+One year,1473,166,1307,11.269518,20.914383,-15.267469,0.424672
+Two year,1695,48,1647,2.831858,24.066449,-23.705129,0.106714
