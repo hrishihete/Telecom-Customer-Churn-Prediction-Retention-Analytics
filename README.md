@@ -2,7 +2,22 @@
 
 Completed tasks: dataset acquisition and inspection, followed by missing-charge imputation, categorical conversion, and duplicate removal.
 
-## This week's exploratory analysis
+## This week's machine learning deliverables
+
+Trained Logistic Regression, Decision Tree, and Random Forest with fold-local preprocessing and training-only cross-validation selection. See the [model evaluation report](reports/models/evaluation_report.md) for comparisons and limitations of the previously explored evaluation split.
+
+- [Training script](scripts/train_models.py) and [metric verification](scripts/verify_models.py)
+- [Metrics](reports/models/test_metrics.csv), [evaluation predictions](reports/models/test_predictions.csv), and [metadata](reports/models/metadata.json)
+- [Saved fitted pipelines](models/)
+- [ROC/precision–recall curves](reports/models/evaluation_curves.png) and [confusion matrices](reports/models/confusion_matrices.png)
+
+Run `python scripts/train_models.py`, then `python scripts/verify_models.py`. Training uses raw records and the existing split manifest, with imputation and encoding fitted inside each cross-validation fold. The saved pipelines expect the 19 original predictor columns; convert SeniorCitizen to string as shown in the training script. Load only trusted joblib files and use the package versions recorded in metadata. No model is deployed.
+
+For a local Windows virtual environment, create it with `python -m venv .venv`, install dependencies with `.venv\Scripts\python.exe -m pip install -r requirements.txt`, and run the scripts with `.venv\Scripts\python.exe` in place of `python`.
+
+The tested model environment is pinned in [requirements-models-lock.txt](requirements-models-lock.txt); install that file instead of the broad requirements to reproduce this training run's dependency versions.
+
+## Previous week's exploratory analysis
 
 Churn rates across contract types, payment methods, and tenure bands are documented in the [EDA findings report](reports/eda/findings.md), with segment counts, rates, four charts, and limitations.
 
@@ -60,6 +75,6 @@ The raw CSV is included, so downloading again is optional. The public Kaggle end
 
 Source: [BlastChar's Kaggle Telco Customer Churn dataset](https://www.kaggle.com/datasets/blastchar/telco-customer-churn). Refer to the source's terms before external redistribution. This repository does not confer a new license on the data.
 
-The completed scope includes dataset acquisition, initial inspection, and data cleaning. Model training and a Power BI dashboard remain subsequent project work.
+Completed scope includes acquisition, cleaning, exploratory analysis, and model training/evaluation. An operational Power BI dashboard and deployment remain subsequent project work.
 
 GitHub repository: [Telecom Customer Churn Prediction & Retention Analytics](https://github.com/hrishihete/Telecom-Customer-Churn-Prediction-Retention-Analytics).
