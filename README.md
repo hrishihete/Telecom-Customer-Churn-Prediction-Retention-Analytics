@@ -2,7 +2,19 @@
 
 Completed tasks: dataset acquisition and inspection, followed by missing-charge imputation, categorical conversion, and duplicate removal.
 
-## This week's machine learning deliverables
+## This week's feature importance and SHAP analysis
+
+See the [explainability findings](reports/explainability/findings.md) for global drivers, signed contributions, local customer explanations, and interpretation limits.
+
+- [Explanation script](scripts/explain_model.py) and [verification script](scripts/verify_explanations.py)
+- [Global importance comparison](reports/explainability/global_importance.csv) and [driver direction](reports/explainability/driver_direction.csv)
+- [Customer-level grouped SHAP](reports/explainability/shap_by_customer.csv), [encoded SHAP](reports/explainability/shap_encoded.csv), and [prediction references](reports/explainability/explanation_predictions.csv)
+- [Charts and local examples](reports/explainability/)
+- [Pinned explanation environment](requirements-explainability-lock.txt)
+
+Install the explanation lock file, then run `python scripts/explain_model.py` and `python scripts/verify_explanations.py`. The existing Random Forest is explained without refitting. Results describe model behavior, not causal effects on actual churn.
+
+## Previous week's machine learning deliverables
 
 Trained Logistic Regression, Decision Tree, and Random Forest with fold-local preprocessing and training-only cross-validation selection. See the [model evaluation report](reports/models/evaluation_report.md) for comparisons and limitations of the previously explored evaluation split.
 

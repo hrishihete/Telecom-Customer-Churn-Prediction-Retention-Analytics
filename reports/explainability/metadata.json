@@ -1,0 +1,23 @@
+{
+  "model": "random_forest",
+  "model_sha256": "245b117bdbca32c855f59af29c50b2a67b2f2d4c6c6bf5bedd093d52039f047b",
+  "source_sha256": "88be4b93fbe0cc83421af1c503794c97c342eca914c1576db7c276e61d61358a",
+  "shap_version": "0.54.1",
+  "customers": 1409,
+  "encoded_features": 46,
+  "source_features": 19,
+  "base_probability": 0.26507987220447304,
+  "max_additivity_error": 1.3322676295501878e-15,
+  "baseline_ap": 0.6571130726756507,
+  "explainer": "TreeExplainer",
+  "perturbation": "tree_path_dependent",
+  "model_output": "raw",
+  "explained_output": "RandomForestClassifier class 1 probability",
+  "permutation_repeats": 10,
+  "seed": 42,
+  "cases": {
+    "highest_score": "5178-LMXOP",
+    "lowest_score": "1403-GYAFU",
+    "near_threshold": "0988-JRWWP"
+  }
+}

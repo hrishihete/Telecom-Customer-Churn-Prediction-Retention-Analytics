@@ -1,0 +1,21 @@
+feature,value_group,customers,mean_shap
+Contract,Month-to-month,773,0.07499558073761943
+Contract,One year,300,-0.05651536237694937
+Contract,Two year,336,-0.08948146986263714
+InternetService,DSL,484,-0.051798386482296295
+InternetService,Fiber optic,613,0.05530473881431185
+InternetService,No,312,-0.0307704463299111
+tenure,"(-0.001, 8.0]",364,0.07737550001108949
+tenure,"(28.0, 55.0]",346,-0.03903493739205487
+tenure,"(55.0, 72.0]",347,-0.04725068878374502
+tenure,"(8.0, 28.0]",352,-0.0005027704682928972
+OnlineSecurity,No,701,0.03811379339083337
+OnlineSecurity,No internet service,312,-0.03203533576236613
+OnlineSecurity,Yes,396,-0.039878829579524586
+TechSupport,No,702,0.031039031176346387
+TechSupport,No internet service,312,-0.03126352251836271
+TechSupport,Yes,395,-0.030605926230518898
+PaymentMethod,Bank transfer (automatic),300,-0.020846412137855683
+PaymentMethod,Credit card (automatic),309,-0.021911189624569408
+PaymentMethod,Electronic check,474,0.03690354227880783
+PaymentMethod,Mailed check,326,-0.016720190624362724

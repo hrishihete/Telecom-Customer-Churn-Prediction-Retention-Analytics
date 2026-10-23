@@ -1,0 +1,58 @@
+case,customerID,feature,observed_value,shap_value
+highest_score,5178-LMXOP,gender,Male,0.001480182838746289
+highest_score,5178-LMXOP,SeniorCitizen,1,0.014524009429374814
+highest_score,5178-LMXOP,Partner,Yes,-0.006170548649971935
+highest_score,5178-LMXOP,Dependents,No,0.007439295646105027
+highest_score,5178-LMXOP,tenure,1,0.10215951411673951
+highest_score,5178-LMXOP,PhoneService,Yes,-0.0009318121952963746
+highest_score,5178-LMXOP,MultipleLines,Yes,0.018589367323466676
+highest_score,5178-LMXOP,InternetService,Fiber optic,0.06926000231961076
+highest_score,5178-LMXOP,OnlineSecurity,No,0.045841672793602496
+highest_score,5178-LMXOP,OnlineBackup,No,0.022029582295985294
+highest_score,5178-LMXOP,DeviceProtection,No,0.015133623040302798
+highest_score,5178-LMXOP,TechSupport,No,0.04244257728723819
+highest_score,5178-LMXOP,StreamingTV,Yes,0.01827340129422235
+highest_score,5178-LMXOP,StreamingMovies,Yes,0.017274463443654457
+highest_score,5178-LMXOP,Contract,Month-to-month,0.08696591650719064
+highest_score,5178-LMXOP,PaperlessBilling,Yes,0.013925604542573538
+highest_score,5178-LMXOP,PaymentMethod,Electronic check,0.03599172106192694
+highest_score,5178-LMXOP,MonthlyCharges,95.1,0.02264711246839411
+highest_score,5178-LMXOP,TotalCharges,95.1,0.06606896477116733
+lowest_score,1403-GYAFU,gender,Male,-0.0004777211808120596
+lowest_score,1403-GYAFU,SeniorCitizen,0,-0.001784669784427603
+lowest_score,1403-GYAFU,Partner,Yes,-0.00434196956593821
+lowest_score,1403-GYAFU,Dependents,Yes,-0.005851508099470209
+lowest_score,1403-GYAFU,tenure,70,-0.029337135246352643
+lowest_score,1403-GYAFU,PhoneService,Yes,-0.0007222185909480489
+lowest_score,1403-GYAFU,MultipleLines,No,-0.003227731425959053
+lowest_score,1403-GYAFU,InternetService,No,-0.020033977458885174
+lowest_score,1403-GYAFU,OnlineSecurity,No internet service,-0.02401389076958709
+lowest_score,1403-GYAFU,OnlineBackup,No internet service,-0.010233855208018313
+lowest_score,1403-GYAFU,DeviceProtection,No internet service,-0.0103859544066184
+lowest_score,1403-GYAFU,TechSupport,No internet service,-0.02260081590217467
+lowest_score,1403-GYAFU,StreamingTV,No internet service,-0.007867045251198827
+lowest_score,1403-GYAFU,StreamingMovies,No internet service,-0.007785939719751143
+lowest_score,1403-GYAFU,Contract,Two year,-0.06874633988214021
+lowest_score,1403-GYAFU,PaperlessBilling,No,-0.009271324341672826
+lowest_score,1403-GYAFU,PaymentMethod,Credit card (automatic),-0.014556949915775441
+lowest_score,1403-GYAFU,MonthlyCharges,20.05,-0.010821739007804275
+lowest_score,1403-GYAFU,TotalCharges,1360.25,-0.01028548766930909
+near_threshold,0988-JRWWP,gender,Female,-0.001866853099062832
+near_threshold,0988-JRWWP,SeniorCitizen,0,-0.004915863606362002
+near_threshold,0988-JRWWP,Partner,No,0.006003963974143977
+near_threshold,0988-JRWWP,Dependents,No,0.0034309120113996776
+near_threshold,0988-JRWWP,tenure,3,0.07446989283871383
+near_threshold,0988-JRWWP,PhoneService,Yes,-0.0038055914745934345
+near_threshold,0988-JRWWP,MultipleLines,No,-0.011852731146404557
+near_threshold,0988-JRWWP,InternetService,DSL,-0.07224100972869625
+near_threshold,0988-JRWWP,OnlineSecurity,No,0.04016112339499881
+near_threshold,0988-JRWWP,OnlineBackup,No,0.021665910908284115
+near_threshold,0988-JRWWP,DeviceProtection,No,0.011368746507386566
+near_threshold,0988-JRWWP,TechSupport,No,0.032872320191845654
+near_threshold,0988-JRWWP,StreamingTV,Yes,0.009653310584756974
+near_threshold,0988-JRWWP,StreamingMovies,No,-0.0008217861421898507
+near_threshold,0988-JRWWP,Contract,Month-to-month,0.06791320675476434
+near_threshold,0988-JRWWP,PaperlessBilling,Yes,0.013279445460686903
+near_threshold,0988-JRWWP,PaymentMethod,Electronic check,0.03517824336840147
+near_threshold,0988-JRWWP,MonthlyCharges,54.2,-0.02175641618766957
+near_threshold,0988-JRWWP,TotalCharges,140.4,0.03624334902885605
