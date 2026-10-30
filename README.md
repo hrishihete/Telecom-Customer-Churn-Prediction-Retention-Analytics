@@ -87,6 +87,6 @@ The raw CSV is included, so downloading again is optional. The public Kaggle end
 
 Source: [BlastChar's Kaggle Telco Customer Churn dataset](https://www.kaggle.com/datasets/blastchar/telco-customer-churn). Refer to the source's terms before external redistribution. This repository does not confer a new license on the data.
 
-Completed scope includes acquisition, cleaning, exploratory analysis, and model training/evaluation. An operational Power BI dashboard and deployment remain subsequent project work.
+Completed scope includes acquisition, cleaning, exploratory analysis, model training/evaluation, explainability, and a native Power BI historical-data dashboard. See the [dashboard guide](powerbi/README.md), [editable Power BI project](powerbi/ChurnRisk.pbip), and [Desktop validation](reports/dashboard/validation.md). Live production data and deployment remain subsequent project work.
 
 GitHub repository: [Telecom Customer Churn Prediction & Retention Analytics](https://github.com/hrishihete/Telecom-Customer-Churn-Prediction-Retention-Analytics).

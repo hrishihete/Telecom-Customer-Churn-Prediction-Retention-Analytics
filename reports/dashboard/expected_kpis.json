@@ -1,0 +1,13 @@
+{
+  "active_customers": 5174,
+  "excluded_historical_churners": 1869,
+  "high_risk_customers": 402,
+  "mean_risk": 0.18224160677235993,
+  "monthly_charges": 316985.75,
+  "high_risk_monthly_charges": 31054.149999999998,
+  "risk_weighted_monthly_charges": 67388.05208044776,
+  "scored_at_utc": "2026-10-29 20:23:22",
+  "source_mode": "historical snapshot",
+  "currency": "source currency units (CU)",
+  "model_sha256": "245b117bdbca32c855f59af29c50b2a67b2f2d4c6c6bf5bedd093d52039f047b"
+}

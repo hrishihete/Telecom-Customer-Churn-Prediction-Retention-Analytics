@@ -1,0 +1,191 @@
+{
+  "compatibilityLevel": 1606,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "DataPath",
+        "expression": "\"C:\\Users\\Hrishikesh\\OneDrive\\Documents\\ChatGPT\\Telecom Customer Churn Prediction & Retention Analytics\\powerbi\\data\\customer_risk.csv\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
+        "kind": "m",
+        "lineageTag": "95fbf077-65e5-4115-9346-6a9b15d77143"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "Customers",
+        "columns": [
+          {
+            "name": "customerID",
+            "dataType": "string",
+            "lineageTag": "a5d7a676-3860-4a22-bccb-31f5b8e1f7a3",
+            "sourceColumn": "customerID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Contract",
+            "dataType": "string",
+            "lineageTag": "484c90b9-4256-484f-836b-f6fc32d7c700",
+            "sourceColumn": "Contract",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PaymentMethod",
+            "dataType": "string",
+            "lineageTag": "0ccefec0-d540-4d19-b03a-3a9a9fd88af9",
+            "sourceColumn": "PaymentMethod",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "InternetService",
+            "dataType": "string",
+            "lineageTag": "2d65b5c8-49fb-413b-9922-fd07da1f00f6",
+            "sourceColumn": "InternetService",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "tenure",
+            "dataType": "int64",
+            "lineageTag": "a88525ba-bafc-488e-99f5-38a53bc4fbe8",
+            "sourceColumn": "tenure",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MonthlyCharges",
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "f31f884b-3eef-4017-815d-16e5f2ee1a9d",
+            "sourceColumn": "MonthlyCharges",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "RiskScore",
+            "dataType": "double",
+            "formatString": "0.0%",
+            "lineageTag": "5b64225c-3921-45ab-80fe-653173de4a29",
+            "sourceColumn": "RiskScore",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "RiskBand",
+            "dataType": "string",
+            "lineageTag": "1e355dd2-78e9-486f-9b37-1531bd14d893",
+            "sourceColumn": "RiskBand",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "RiskWeightedMonthlyCharges",
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "fd8c827e-680b-419b-a6d2-d67860e43f83",
+            "sourceColumn": "RiskWeightedMonthlyCharges",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TenureBand",
+            "dataType": "string",
+            "lineageTag": "b06dc4ae-4009-4c0d-b700-2eb064a439c9",
+            "sourceColumn": "TenureBand",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ModelCohort",
+            "dataType": "string",
+            "lineageTag": "91ba8004-8e47-4104-8c77-6f2c2c7a702e",
+            "sourceColumn": "ModelCohort",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ScoredAtUTC",
+            "dataType": "string",
+            "lineageTag": "d4ea32ec-084d-4884-84f9-eebce64f1e0b",
+            "sourceColumn": "ScoredAtUTC",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SourceMode",
+            "dataType": "string",
+            "lineageTag": "b71cd8a7-d2c9-4f83-b43a-ed95a9ed6b05",
+            "sourceColumn": "SourceMode",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ModelVersion",
+            "dataType": "string",
+            "lineageTag": "a240cdf2-7b76-4b72-9968-db8b3c764d7e",
+            "sourceColumn": "ModelVersion",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "eb62f33b-8400-42ec-91fa-167b64b515bf",
+        "measures": [
+          {
+            "name": "Active Customers",
+            "expression": "COUNTROWS(Customers)",
+            "formatString": "#,0",
+            "lineageTag": "ea43148a-3636-4323-8759-691563fd0ad3"
+          },
+          {
+            "name": "Average Risk",
+            "expression": "AVERAGE(Customers[RiskScore])",
+            "formatString": "0.0%",
+            "lineageTag": "18a3a29c-2a04-4325-92d5-47a56bbba7f0"
+          },
+          {
+            "name": "High Risk Customers",
+            "expression": "CALCULATE(COUNTROWS(Customers), KEEPFILTERS(Customers[RiskScore] >= 0.5))",
+            "formatString": "#,0",
+            "lineageTag": "a7a39ad3-1476-4177-8b17-bd5ffe5ad099"
+          },
+          {
+            "name": "Monthly Charges CU",
+            "expression": "SUM(Customers[MonthlyCharges])",
+            "formatString": "#,0.00",
+            "lineageTag": "4c2a829b-82bf-4eb7-9031-103d0035fdb3"
+          },
+          {
+            "name": "Revenue at Risk Proxy CU",
+            "expression": "SUMX(Customers, Customers[MonthlyCharges] * Customers[RiskScore])",
+            "formatString": "#,0.00",
+            "lineageTag": "7ca52dd3-9eba-4d67-b468-9b3907cdf1e0"
+          },
+          {
+            "name": "High Risk Monthly Charges CU",
+            "expression": "CALCULATE(SUM(Customers[MonthlyCharges]), KEEPFILTERS(Customers[RiskScore] >= 0.5))",
+            "formatString": "#,0.00",
+            "lineageTag": "fa5cd45f-d3b3-4e91-8d07-b8671ea7b93a"
+          },
+          {
+            "name": "Last Scored UTC",
+            "expression": "MAX(Customers[ScoredAtUTC])",
+            "lineageTag": "96276d79-3d87-4e12-81bb-cdf7eafd9259"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Customers",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(DataPath), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Typed = Table.TransformColumnTypes(Headers, {{\"customerID\", type text}, {\"Contract\", type text}, {\"PaymentMethod\", type text}, {\"InternetService\", type text}, {\"tenure\", Int64.Type}, {\"MonthlyCharges\", type number}, {\"RiskScore\", type number}, {\"RiskBand\", type text}, {\"RiskWeightedMonthlyCharges\", type number}, {\"TenureBand\", type text}, {\"ModelCohort\", type text}, {\"ScoredAtUTC\", type text}, {\"SourceMode\", type text}, {\"ModelVersion\", type text}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
