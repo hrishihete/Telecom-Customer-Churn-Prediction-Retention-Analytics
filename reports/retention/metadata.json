@@ -1,0 +1,12 @@
+{
+  "high_risk_customers": 402,
+  "active_customers": 5174,
+  "monthly_charges_cu": 31054.149999999998,
+  "weighted_exposure_cu": 18657.185705885706,
+  "training_records": 314,
+  "test_records": 88,
+  "source_scored_at_utc": "2026-10-29 20:23:22",
+  "source_sha256": "88be4b93fbe0cc83421af1c503794c97c342eca914c1576db7c276e61d61358a",
+  "scores_sha256": "c844b0222da04467bf506d214ac0588802148cd446d6f6f098ef3437579d9ac7",
+  "validation": "PASS: one-to-one joins, population coverage, exclusive plays, cohort totals and executed SQL reconciliation"
+}

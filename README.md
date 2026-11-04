@@ -90,3 +90,7 @@ Source: [BlastChar's Kaggle Telco Customer Churn dataset](https://www.kaggle.com
 Completed scope includes acquisition, cleaning, exploratory analysis, model training/evaluation, explainability, and a native Power BI historical-data dashboard. See the [dashboard guide](powerbi/README.md), [editable Power BI project](powerbi/ChurnRisk.pbip), and [Desktop validation](reports/dashboard/validation.md). Live production data and deployment remain subsequent project work.
 
 GitHub repository: [Telecom Customer Churn Prediction & Retention Analytics](https://github.com/hrishihete/Telecom-Customer-Churn-Prediction-Retention-Analytics).
+
+## Targeted retention strategies
+
+The [retention strategy and pilot plan](reports/retention/strategy.md) segments 402 historical high-risk customers by contract, tenure and service subscriptions. Deliverables include a [customer review queue](reports/retention/customer_review_queue.csv), [cohort priorities](reports/retention/cohort_priorities.csv), action playbooks, a cohort chart and threshold sensitivity. Reproduce with `python scripts/retention_strategy.py`; the script validates population coverage, exclusive play assignment and SQL reconciliation. Actual usage and complaint data are unavailable, so service subscriptions are explicitly treated as proxies and all interventions remain hypotheses for testing.

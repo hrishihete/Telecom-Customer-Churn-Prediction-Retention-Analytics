@@ -1,0 +1,15 @@
+Indicator,Value,HighRiskCustomers,ShareOfHighRisk
+InternetService,DSL,61,0.1517412935323383
+InternetService,Fiber optic,341,0.8482587064676617
+TechSupport,No,374,0.9303482587064676
+TechSupport,Yes,28,0.06965174129353234
+OnlineSecurity,No,385,0.9577114427860697
+OnlineSecurity,Yes,17,0.04228855721393035
+StreamingTV,No,253,0.6293532338308457
+StreamingTV,Yes,149,0.3706467661691542
+StreamingMovies,No,253,0.6293532338308457
+StreamingMovies,Yes,149,0.3706467661691542
+PaymentMethod,Bank transfer (automatic),24,0.05970149253731343
+PaymentMethod,Credit card (automatic),31,0.07711442786069651
+PaymentMethod,Electronic check,293,0.7288557213930348
+PaymentMethod,Mailed check,54,0.13432835820895522
