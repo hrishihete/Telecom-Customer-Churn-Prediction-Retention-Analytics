@@ -1,0 +1,4 @@
+eventID,customerID,observedAt,metric,value,unit
+demo-001,7590-VHVEG,2026-11-01T10:00:00Z,data_usage,128.5,MB
+demo-002,7590-VHVEG,2026-11-01T10:05:00Z,voice_usage,6.5,minutes
+demo-003,5575-GNVDE,2026-11-01T10:10:00Z,complaint_count,1,count

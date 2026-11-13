@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "profile": "snapshot",
+  "files": 1,
+  "rows": 7043,
+  "as_of_utc": "2026-11-13T22:11:48.312115+00:00",
+  "errors": {},
+  "warnings": {
+    "zero_tenure_unbilled": 11
+  },
+  "examples": [
+    {
+      "file": "WA_Fn-UseC_-Telco-Customer-Churn.csv",
+      "line": 490,
+      "rule": "zero_tenure_unbilled",
+      "field": "TotalCharges",
+      "severity": "warning"
+    },
+    {
+      "file": "WA_Fn-UseC_-Telco-Customer-Churn.csv",
+      "line": 755,
+      "rule": "zero_tenure_unbilled",
+      "field": "TotalCharges",
+      "severity": "warning"
+    },
+    {
+      "file": "WA_Fn-UseC_-Telco-Customer-Churn.csv",
+      "line": 938,
+      "rule": "zero_tenure_unbilled",
+      "field": "TotalCharges",
+      "severity": "warning"
+    },
+    {
+      "file": "WA_Fn-UseC_-Telco-Customer-Churn.csv",
+      "line": 1084,
+      "rule": "zero_tenure_unbilled",
+      "field": "TotalCharges",
+      "severity": "warning"
+    },
+    {
+      "file": "WA_Fn-UseC_-Telco-Customer-Churn.csv",
+      "line": 1342,
+      "rule": "zero_tenure_unbilled",
+      "field": "TotalCharges",
+      "severity": "warning"
+    },
+    {
+      "file": "WA_Fn-UseC_-Telco-Customer-Churn.csv",
+      "line": 3333,
+      "rule": "zero_tenure_unbilled",
+      "field": "TotalCharges",
+      "severity": "warning"
+    },
+    {
+      "file": "WA_Fn-UseC_-Telco-Customer-Churn.csv",
+      "line": 3828,
+      "rule": "zero_tenure_unbilled",
+      "field": "TotalCharges",
+      "severity": "warning"
+    },
+    {
+      "file": "WA_Fn-UseC_-Telco-Customer-Churn.csv",
+      "line": 4382,
+      "rule": "zero_tenure_unbilled",
+      "field": "TotalCharges",
+      "severity": "warning"
+    },
+    {
+      "file": "WA_Fn-UseC_-Telco-Customer-Churn.csv",
+      "line": 5220,
+      "rule": "zero_tenure_unbilled",
+      "field": "TotalCharges",
+      "severity": "warning"
+    },
+    {
+      "file": "WA_Fn-UseC_-Telco-Customer-Churn.csv",
+      "line": 6672,
+      "rule": "zero_tenure_unbilled",
+      "field": "TotalCharges",
+      "severity": "warning"
+    },
+    {
+      "file": "WA_Fn-UseC_-Telco-Customer-Churn.csv",
+      "line": 6756,
+      "rule": "zero_tenure_unbilled",
+      "field": "TotalCharges",
+      "severity": "warning"
+    }
+  ]
+}

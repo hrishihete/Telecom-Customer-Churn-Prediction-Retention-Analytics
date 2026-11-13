@@ -1,0 +1,28 @@
+name: Validate incoming customer data
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests -p test_incoming_validation.py -v
+      - run: python scripts/validate_incoming.py snapshot data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv --report validation-results/snapshot.json
+      - run: python scripts/validate_incoming.py events data/examples/telemetry_sample.csv --as-of 2026-11-13T12:00:00Z --report validation-results/example.json
+      - name: Check incoming event files together
+        shell: bash
+        run: |
+          shopt -s nullglob
+          batches=(data/incoming/*.csv)
+          if (( ${#batches[@]} )); then
+            python scripts/validate_incoming.py events "${batches[@]}" --report validation-results/incoming.json
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: validation-results
+          path: validation-results/
