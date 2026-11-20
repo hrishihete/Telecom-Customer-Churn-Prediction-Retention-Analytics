@@ -2,7 +2,18 @@
 
 Completed tasks: dataset acquisition and inspection, followed by missing-charge imputation, categorical conversion, and duplicate removal.
 
-## This week's feature importance and SHAP analysis
+## This week's model calibration and outreach threshold tuning
+
+See the [calibration and threshold findings](reports/calibration/findings.md) for the recommended policy, precision/recall tradeoffs, calibration comparison and historical-data limitations. The workflow refits the previous model configuration with separate base-fit, calibration and threshold-tuning roles; compares uncalibrated, sigmoid and isotonic probabilities using calibration-only out-of-fold log loss; then freezes F1-balanced, precision-first and recall-first policies before historical test evaluation.
+
+- [Reproducible analysis](scripts/calibrate_thresholds.py) and [independent verification](scripts/verify_calibration.py)
+- [Policy metrics](reports/calibration/policy_metrics.csv), [calibration selection](reports/calibration/calibration_cv_metrics.csv), [full tuning sweep](reports/calibration/threshold_sweep.csv), and [verification results](reports/calibration/verification.md)
+- [Saved outreach model](models/calibration/outreach_model.joblib) and matching [threshold policy](models/calibration/policy.json)
+- [Power BI import and DAX guide](reports/calibration/power_bi_handoff.md) and [SQL reconciliation](sql/calibration_policy_metrics.sql)
+
+Use the existing `requirements-models-lock.txt` environment, then run `python scripts/calibrate_thresholds.py` and `python scripts/verify_calibration.py`. The original test set has already been explored; results are exploratory and need fresh independent validation. Existing Power BI scores and retention queues retain their earlier model and thresholds.
+
+## Previous week's feature importance and SHAP analysis
 
 See the [explainability findings](reports/explainability/findings.md) for global drivers, signed contributions, local customer explanations, and interpretation limits.
 

@@ -1,0 +1,14 @@
+{
+  "method": "uncalibrated",
+  "comparison_operator": ">=",
+  "default_policy": "balanced_f1",
+  "thresholds": {
+    "balanced_f1": 0.35883328877728843,
+    "precision_first": 0.3714456238015014,
+    "recall_first": 0.32266548590915056
+  },
+  "rule": "Maximize tuning F1; ties prefer precision then higher threshold",
+  "assumptions": "Equal precision/recall emphasis; alternative tuning constraints: precision >= 0.65, recall >= 0.80",
+  "model_sha256": "a3ddc14882afbf7952b330953873122784d922d695fc3551f711252549b5fd8d",
+  "scope": "Historical exploratory evaluation; no production deployment"
+}

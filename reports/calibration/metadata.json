@@ -1,0 +1,46 @@
+{
+  "created_utc": "2026-11-20T05:40:32.046900+00:00",
+  "seed": 20261120,
+  "base_family": "random_forest",
+  "base_params": {
+    "model__max_depth": 8,
+    "model__min_samples_leaf": 10
+  },
+  "selected_method": "uncalibrated",
+  "selection": "Five-fold out-of-fold calibration-subset log loss; ties: Brier then method name",
+  "split_counts": {
+    "base_fit": {
+      "rows": 3380,
+      "churners": 897
+    },
+    "calibration": {
+      "rows": 1127,
+      "churners": 299
+    },
+    "threshold_tuning": {
+      "rows": 1127,
+      "churners": 299
+    },
+    "historical_test": {
+      "rows": 1409,
+      "churners": 374
+    }
+  },
+  "calibration_folds": 5,
+  "source_sha256": "88be4b93fbe0cc83421af1c503794c97c342eca914c1576db7c276e61d61358a",
+  "original_manifest_sha256": "2da57a87fe27174cf805f61ecc2740ac88341e535050d2585a91d55f43d69d81",
+  "legacy_model_sha256": "245b117bdbca32c855f59af29c50b2a67b2f2d4c6c6bf5bedd093d52039f047b",
+  "model_sha256": "a3ddc14882afbf7952b330953873122784d922d695fc3551f711252549b5fd8d",
+  "base_model_sha256": "a3ddc14882afbf7952b330953873122784d922d695fc3551f711252549b5fd8d",
+  "python_packages": {
+    "scikit-learn": "1.9.1",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4",
+    "joblib": "1.6.0"
+  },
+  "limitations": [
+    "Historical model family and hyperparameters were selected using all original training records; the new subdivisions are not independent of that historical selection.",
+    "Original test records were explored in prior EDA and evaluation; no pristine independent confirmation is available.",
+    "No timestamps, direct complaints, detailed usage, treatment outcomes, outreach budget or intervention costs are available."
+  ]
+}
